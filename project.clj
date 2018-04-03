@@ -39,7 +39,7 @@
   :parent-project {:coords [puppetlabs/clj-parent "1.7.3"]
                    :inherit [:managed-dependencies]}
 
-  :dependencies [[org.clojure/clojure "1.9.0"]
+  :dependencies [[org.clojure/clojure]
 
                  [slingshot]
                  [circleci/clj-yaml]
