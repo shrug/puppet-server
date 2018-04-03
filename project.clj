@@ -177,7 +177,7 @@
                                               :compiler {:main "puppetlabs.puppetserver.dashboard.dev"
                                                          :source-map true}}}}
                    ;; SERVER-332, enable SSLv3 for unit tests that exercise SSLv3
-                   :jvm-opts      ["-Djava.security.properties=./dev-resources/java.security"]}
+                   :jvm-opts      ["-Djava.security.properties=./dev-resources/java.security" "--add-modules" "java.xml.bind"]}
 
              :testutils {:source-paths ^:replace ["test/unit" "test/integration"]}
              :test {
